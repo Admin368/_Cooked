@@ -1,0 +1,13 @@
+proxies:
+  - name: "Coooked1"
+    type: ss
+    server: 24.144.70.167
+    port: 8389
+    password: 36880076
+    cipher: chacha20-ietf-poly1305
+
+proxy-groups:
+  - name: "Cooked Group"
+    type: select
+    proxies:
+      - "Coooked1"
